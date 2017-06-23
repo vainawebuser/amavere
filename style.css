@@ -1,0 +1,51 @@
+*,*:before, *:after{
+	box-sizing: :border-box;
+	position: relative;
+}
+html{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header{
+
+}
+
+h2{
+	font-family: 
+	font-size:1.88em;
+	color: #1f4ecc;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+}
+h3{
+font-family:
+font-size1.88em;
+color: #faeb03;
+font-style: normal;
+text-align: left;
+line-height: 1.61em;
+letter-spacing: 0em; 
+}
+h4{
+	font-family: 
+	font-size:1.56em;
+	color: #ffffff;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
+}
+.sec1 p{
+	font-family: 
+	font-size:1.25em;
+	color: #656565;
+	font-style: normal;
+	line-height: 1.07em;
+	letter-spacing: 0em;
+}
+.sec2{
+	
+}
