@@ -9,6 +9,7 @@
 	box-sizing: :border-box;
 	position: relative;
 }
+
 html, body{
 	display: flex;
 	flex-direction: column;
@@ -17,6 +18,7 @@ html, body{
 	width: 100%;
 	margin: 0;
 }
+
 #inicio{
 	width: 100%;
 	height: 100vh;
@@ -29,6 +31,7 @@ html, body{
 #inicio nav{
 	z-index: 1;
 	position: fixed;
+	top:0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -41,19 +44,23 @@ html, body{
 	list-style: none;
 	padding-left: 0;
 }
-#inicio nav ul li {
+#inicio nav ul a{
+	text-decoration:none;
+	width: 130px;
+	margin: 1.5%;
+}
+#inicio nav ul a li {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size:0.94em;
-	color: #000000;
 	font-style: normal;
+	color: #000000;
 	text-align: center;
 	line-height: 0.8em;
 	letter-spacing: 0em;
 	background: #fff;
-	margin-left: 5%;
 	padding: 4px 0;
-	width: 100px;
+	width: 100%;
 	border-radius: 20px;
 	border: solid 1px #808080;
 }
@@ -70,60 +77,54 @@ html, body{
 
 }
 #inicio div p{
-	margin: 7px 18px 18px 18px;
+	margin:18px;
+	margin-top: 7px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size:1.25em;
-	color: #ffffff;
 	font-style: normal;
+	color: #fff;
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0em;
 }
 .logo{
-	justify-content: flex-start;
-	width: 24.23%;
-	margin-left: 8.05%;
+	width: 25%;
+	margin-left: 8%;
 	margin-right: 100%;
 }
 main{
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
 }
-footer{
-	display: flex;
-	flex-flow: row wrap;
-}
+
 section{
 	width: 50%;
+
 }
-h3{
-	width:100%; 
-	height:10%;
-	margin-top:149px;
+section .logo{
+	width: 50%;
+	margin-left: 16%;
 }
-h2{
-	width: 
+main #sobre{
+	margin:0;
 }
-#sobre{
-	width: 49%;
-	margin:0%;
-}
-#sobre h2{
+main #sobre h2{
+	margin-left: 20%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	margin-left: 10.25%;
 	font-family:; 
 	font-size:1.88em;
-	color: #1f4ecc;
 	font-style: normal;
+	color: #1f4ecc;
 	text-align: left;
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
-#sobre p{
-	margin: 0% 27% 5% 10.25%;
-	flex-wrap: row;
+main #sobre p{
+	margin: 0% 27% 5% 20%;
 	text-align: left;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -132,16 +133,19 @@ h2{
 	font-style: normal;
 	line-height: 1.07em;
 	letter-spacing: 0em;
-
 }
 
-#acoes{
+main #acoes{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
 	background: #1f4ecc;
-
 }
-#acoes h2{
+main #acoes h2{
+	width: 100%;
+	margin-top: 150px;
+	margin-left: 10.25%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-size:1.88em;
@@ -151,34 +155,41 @@ h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
-#acoes h3{
+
+
+main #acoes div{
+	margin: 0 2%;
+	width: 23%;
+
+	/*background: red;*/
+
+}
+main #acoes div h3{
+	padding: 0;
+	margin: 0;
+	width: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600; 
 	font-size:1.56em;
-	color: #fff;
 	font-style: normal;
+	color: #fff;
 	text-align: left;
 	line-height: 1.34em;
 	letter-spacing: 0em;
 }
-#acoes p{
+main #acoes div p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400; 
 	font-size:0.88em;
 	color: #fff;
 	font-style: normal;
-	line-height: 0.75em;
+	line-height: 1.5em;
 	letter-spacing: 0em;
 }
-#acoes div{
-	width: 25%;
+
+footer{
+	width: 100%;
+	height: 100vh;
 	display: flex;
-	flex-flow: wrap;
-	flex-direction: row;
-	justify-content: space-between;
-	text-align: left;
-
-
-
+	flex-flow: row wrap;
 }
-
