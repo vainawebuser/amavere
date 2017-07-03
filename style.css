@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+/*
+	400 - Regular
+	600 - Semi-Bold
+	700 - Bold	
+*/
+
 *,*:before, *:after{
 	box-sizing: :border-box;
 	position: relative;
@@ -20,6 +27,7 @@ html, body{
 	justify-content: space-between;
 }
 #inicio nav{
+	z-index: 1;
 	position: fixed;
 	width: 100%;
 	display: flex;
@@ -34,7 +42,8 @@ html, body{
 	padding-left: 0;
 }
 #inicio nav ul li {
-	font-family: ;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size:0.94em;
 	color: #000000;
 	font-style: normal;
@@ -50,7 +59,7 @@ html, body{
 }
 #inicio div{
 	width: 17%;
-	height: 16%;
+	height: auto;
 	border-radius: 15px;
 	opacity: 0%;
 	margin: 0px;
@@ -62,7 +71,8 @@ html, body{
 }
 #inicio div p{
 	margin: 7px 18px 18px 18px;
-	font-family: 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size:1.25em;
 	color: #ffffff;
 	font-style: normal;
@@ -76,11 +86,33 @@ html, body{
 	margin-left: 8.05%;
 	margin-right: 100%;
 }
+main{
+	display: flex;
+	flex-flow: row wrap;
+}
+footer{
+	display: flex;
+	flex-flow: row wrap;
+}
+section{
+	width: 50%;
+}
+h3{
+	width:100%; 
+	height:10%;
+	margin-top:149px;
+}
+h2{
+	width: 
+}
 #sobre{
 	width: 49%;
-	margin: 0%;
+	margin:0%;
 }
 #sobre h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin-left: 10.25%;
 	font-family:; 
 	font-size:1.88em;
 	color: #1f4ecc;
@@ -90,9 +122,11 @@ html, body{
 	letter-spacing: 0em;
 }
 #sobre p{
-	flex-wrap: nowrap;
-	text-align: center;
-	font-family: 
+	margin: 0% 27% 5% 10.25%;
+	flex-wrap: row;
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size:1.25em;
 	color: #656565;
 	font-style: normal;
@@ -100,16 +134,16 @@ html, body{
 	letter-spacing: 0em;
 
 }
-main #acoes #sobre #contato #video{
-	width: 48%;
 
-}
 #acoes{
+	display: flex;
+	flex-flow: row wrap;
 	background: #1f4ecc;
 
 }
 #acoes h2{
-	font-family:; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	font-size:1.88em;
 	color: #faeb03;
 	font-style: normal;
@@ -118,7 +152,8 @@ main #acoes #sobre #contato #video{
 	letter-spacing: 0em;
 }
 #acoes h3{
-	font-family:; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600; 
 	font-size:1.56em;
 	color: #fff;
 	font-style: normal;
@@ -127,7 +162,8 @@ main #acoes #sobre #contato #video{
 	letter-spacing: 0em;
 }
 #acoes p{
-	font-family: 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400; 
 	font-size:0.88em;
 	color: #fff;
 	font-style: normal;
@@ -135,5 +171,14 @@ main #acoes #sobre #contato #video{
 	letter-spacing: 0em;
 }
 #acoes div{
+	width: 25%;
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: left;
+
+
 
 }
+
