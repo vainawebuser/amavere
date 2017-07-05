@@ -186,10 +186,93 @@ main #acoes div p{
 	line-height: 1.5em;
 	letter-spacing: 0em;
 }
-
+/*main #video{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+	background:#fff;	
+}*/
 footer{
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
+}
+
+footer section {
+	width: 50%;
+	
+}
+
+footer #contato {
+	background: #f6e903;
+}
+footer #contato div img{
+	width: 60%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+footer img{
+	width:50%; 
+}
+footer #contato h2{
+	margin-left: 20%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-family:; 
+	font-size:1.88em;
+	font-style: normal;
+	color: #1f4ecc;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+
+}
+footer #contato p{
+	width: 35%;
+	margin-left: 20%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size:1.25em;
+	color: #1f4ecc;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.07em;
+	letter-spacing: 0em;
+}
+footer #contato div{
+	width: 40%;
+	margin: 0;
+	margin-left: 20%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+footer .sec-video{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
+}
+footer .sec-video h3{
+	width: 88%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size:1.60em;
+	color: #1f4ecc;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+
+}
+footer .sec-video video{
+	width: 88%;
 }
