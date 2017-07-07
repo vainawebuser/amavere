@@ -17,17 +17,30 @@ html, body{
 	align-items: center;
 	width: 100%;
 	margin: 0;
+	overflow: auto;
+} 
+@media (max-width: 640px){
+	body{
+		overflow: hidden;
+	}
 }
 
 #inicio{
 	width: 100%;
 	height: 100vh;
 	background: url(Assets/vovo.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
+@media (max-width:640px){
+	#inicio{
+		display: flex;
+		background-position-x: -200px;
+	}
+}
+
 #inicio nav{
 	z-index: 1;
 	position: fixed;
@@ -37,32 +50,46 @@ html, body{
 	justify-content: center;
 	align-items: center;
 }
+@media (max-width:640px){
+	#inicio nav{
+		align-self: center;
+	}
+}
 #inicio nav ul {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	padding-left: 0;
+	padding: 0;
 }
 #inicio nav ul a{
 	text-decoration:none;
-	width: 130px;
-	margin: 1.5%;
+	margin: 0 2%;
+}
+@media (max-width: 640px){
+	#inicio nav ul a{
+		margin: 0 3%; 
+	}
 }
 #inicio nav ul a li {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size:0.94em;
 	font-style: normal;
-	color: #000000;
+	color: #000;
 	text-align: center;
 	line-height: 0.8em;
 	letter-spacing: 0em;
 	background: #fff;
-	padding: 4px 0;
-	width: 100%;
+	padding: 4px 20px;
 	border-radius: 20px;
 	border: solid 1px #808080;
+}
+@media (max-width: 640px){
+	#inicio nav ul a li{
+		padding: 15px;
+	}
 }
 #inicio div{
 	width: 17%;
@@ -76,6 +103,15 @@ html, body{
 	margin-right: 18% ;
 
 }
+@media (max-width: 640px){
+	#inicio div{
+		width: 75%;
+		background: #fff;
+		margin: 0;
+		margin-bottom: 12%;
+		align-self: center;
+	}
+}
 #inicio div p{
 	margin:18px;
 	margin-top: 7px;
@@ -88,21 +124,36 @@ html, body{
 	line-height: 1.07em;
 	letter-spacing: 0em;
 }
+@media (max-width: 640px){
+#inicio div p{
+	color: #656565;
+}
+}
 .logo{
 	width: 25%;
 	margin-left: 8%;
 	margin-right: 100%;
 }
+@media(max-width: 640px){
+	.logo{
+		width: 73%;
+		margin: 0;
+		margin-top: 50px;
+	}
+}
 main{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
 }
-
 section{
 	width: 50%;
-
+}
+@media(max-width: 640px){
+	section{
+		width: 100%;
+	}
 }
 section .logo{
 	width: 50%;
@@ -110,6 +161,17 @@ section .logo{
 }
 main #sobre{
 	margin:0;
+}
+@media(max-width: 640px){
+	main #sobre{
+		width: 100%;
+	}
+
+}
+@media(max-width: 640px){
+	main #sobre .logo{
+		display: none;
+	}
 }
 main #sobre h2{
 	margin-left: 20%;
@@ -123,6 +185,11 @@ main #sobre h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
+@media(max-width: 640px){
+	main #sobre h2{
+		margin-left: 13%;
+	}
+}
 main #sobre p{
 	margin: 0% 27% 5% 20%;
 	text-align: left;
@@ -134,6 +201,12 @@ main #sobre p{
 	line-height: 1.07em;
 	letter-spacing: 0em;
 }
+@media(max-width: 640px){
+	main #sobre p{
+		margin: 13%;
+		margin-bottom: 20%;
+	}
+}
 
 main #acoes{
 	display: flex;
@@ -142,10 +215,18 @@ main #acoes{
 	align-content: flex-start;
 	background: #1f4ecc;
 }
+@media(max-width: 640px){
+	main #acoes{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		/*height: 100vh;*/
+	}
+}
 main #acoes h2{
-	width: 100%;
+	width: 80%;
 	margin-top: 150px;
-	margin-left: 10.25%;
+	margin-left: 2%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-size:1.88em;
@@ -155,6 +236,11 @@ main #acoes h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
+@media(max-width: 640px){
+	main #acoes h2{
+		margin-top: 90px;
+	}
+}
 
 
 main #acoes div{
@@ -162,7 +248,12 @@ main #acoes div{
 	width: 23%;
 
 	/*background: red;*/
-
+}
+@media(max-width: 640px){
+	main #acoes div{
+		width: 80%;
+		margin-left: 
+	}
 }
 main #acoes div h3{
 	padding: 0;
@@ -197,28 +288,34 @@ main #acoes div p{
 }*/
 footer{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
+}
+@media(max-width: 640px){
+
 }
 
 footer section {
 	width: 50%;
-	
+}
+@media(max-width: 640px){
+	footer section{
+		width: 100%;
+	}
 }
 
 footer #contato {
 	background: #f6e903;
 }
-footer #contato div img{
-	width: 60%;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
+
 footer img{
 	width:50%; 
+}
+@media(max-width: 640px){
+	footer img{
+		/*align-items: flex-end;*/
+	}
 }
 footer #contato h2{
 	margin-left: 20%;
@@ -245,6 +342,11 @@ footer #contato p{
 	line-height: 1.07em;
 	letter-spacing: 0em;
 }
+@media (max-width: 640px){
+	footer #contato p{
+		width: 63%;
+	}
+}
 footer #contato div{
 	width: 40%;
 	margin: 0;
@@ -252,6 +354,27 @@ footer #contato div{
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+@media(max-width: 640px){
+	footer #contato div{
+		margin: 0;
+		margin-left: 72px;
+		width: auto;
+		align-items: center;
+	}
+}
+footer #contato div img{
+	width: 60%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+@media(max-width: 640px){
+	footer #contato div img{
+		width: 60%;
+	}
+
 }
 
 footer .sec-video{
@@ -276,7 +399,12 @@ footer .sec-video h3{
 footer .sec-video video{
 	width: 88%;
 }
-@media (max-width: 640px){
+@media(max-width: 640px){
+	footer .sec-video{
+		display: none;
+	}
+}
+/*@media (max-width: 640px){
 	#inicio{
 		width: 100%;
 		height: 100vh;
@@ -309,4 +437,4 @@ footer .sec-video video{
 	border: solid 1px #808080;
 }
 
-}
+}*/
