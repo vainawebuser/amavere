@@ -312,13 +312,30 @@ footer #contato {
 footer img{
 	width:50%; 
 }
+footer #contato .divlogo2{
+	display: none;
+	margin: 0;
+}
 @media(max-width: 640px){
-	footer img{
-		/*align-items: flex-end;*/
+footer #contato .logo{
+ 		display: none;
+ 	}
+	footer #contato .divlogo2{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+ 
+	footer #contato .logo2{
+		margin-left: 15%;
+		margin: 0;
 	}
 }
 footer #contato h2{
 	margin-left: 20%;
+	margin-top: 10%;
+	margin-bottom: 0;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-family:; 
@@ -328,11 +345,17 @@ footer #contato h2{
 	text-align: left;
 	line-height: 1.61em;
 	letter-spacing: 0em;
-
+}
+@media(max-width: 640px){
+	footer #contato h2{
+		margin-left: 14%;
+		margin-top: 20%;
+	}
 }
 footer #contato p{
 	width: 35%;
-	margin-left: 20%;
+	margin-left: 17%;
+	margin-top: 0;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size:1.25em;
@@ -345,6 +368,7 @@ footer #contato p{
 @media (max-width: 640px){
 	footer #contato p{
 		width: 63%;
+		margin-left: 14%;
 	}
 }
 footer #contato div{
@@ -358,11 +382,14 @@ footer #contato div{
 @media(max-width: 640px){
 	footer #contato div{
 		margin: 0;
-		margin-left: 72px;
+		margin-bottom: 7%;
+		margin-left: 14%;
 		width: auto;
 		align-items: center;
 	}
 }
+
+
 footer #contato div img{
 	width: 60%;
 	margin: 0;
