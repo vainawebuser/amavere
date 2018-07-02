@@ -82,7 +82,7 @@ html, body{
 	line-height: 0.8em;
 	letter-spacing: 0em;
 	background: #fff;
-	padding: 4px 20px;
+	padding: 10px 20px;
 	border-radius: 20px;
 	border: solid 1px #808080;
 }
@@ -290,6 +290,7 @@ main #acoes div p{
 footer{
 	width: 100%;
 	min-height: 100vh;
+	position: relative;
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -431,4 +432,32 @@ footer .sec-video video{
 	footer .sec-video{
 		display: none;
 	}
+}
+/*footer Vai na Web */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+.vnw{ 
+	width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
 }
